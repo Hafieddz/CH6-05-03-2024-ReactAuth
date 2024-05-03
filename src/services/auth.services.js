@@ -8,7 +8,7 @@ export const login = (data, callback) => {
       callback(true, res.data.token);
     })
     .catch((err) => {
-      console.log(false, err);
+      callback(false, err);
     });
 };
 
